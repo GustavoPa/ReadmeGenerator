@@ -1,9 +1,8 @@
-// Global require's
+// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./src/generateMarkdown.js')
-
-// Array of questions to ask the user
+const generateMarkdown = require('./develop/utlis/generatemarkedown')
+// TODO: Create an array of questions for user input
 const questions = [
     // Project name
     {
@@ -125,24 +124,11 @@ const questions = [
         message: 'Would you like to include your email?',
     },
 ];
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) { }
 
-// Function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
-        if (err)
-            throw err;
-        console.log('Success! Information transferred to the README!')
-    });
-};
-
-// Function to initialize app
-function init() {
-    inquirer.prompt(questions)
-        .then(function (userInput) {
-            console.log(userInput)
-            writeToFile("README.md", generateMarkdown(userInput));
-        });
-};
+// TODO: Create a function to initialize app
+function init() { }
 
 // Function call to initialize app
 init();
