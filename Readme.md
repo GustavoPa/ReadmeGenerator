@@ -32,6 +32,9 @@ can add more questions or modify the application to write different types of fil
   
 ## Testing:
 run the app with node index and compare your readme file with the questions answered
+
+![2021-09-22](https://user-images.githubusercontent.com/16021994/134284587-96fdaac0-0668-4393-8cec-4dd8f99e91fa.png)
+
   
 ## Additional Info:
 - Github: [GustavoPa](https://github.com/GustavoPa)
